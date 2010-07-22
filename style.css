@@ -1,0 +1,272 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: white url('left-bg.png') repeat-y scroll 0 0;
+}
+
+a { color: #047bbf; }
+a:visited { color: #551A8B; }
+
+a > img {
+    border: 0;
+}
+
+/* --- Top: --- */
+#top {
+    height: 48px;
+    background: #4a4a4a url('menu-bg.png') repeat-x scroll 0 0;
+}
+
+    #logo {
+        float: left;
+    }
+
+    #top-end {
+        float: right;
+    }
+
+    #menu {
+        display: block;
+        float: left;
+        height: 48px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+        #menu li {
+            display: inline;
+            float: left;
+            border-left: 1px dotted #828282;
+        }
+
+            #menu > li.first {
+                border: 0px;
+            }
+
+                #menu > li > a {
+                    display: inline;
+                    float: left;
+                    padding: 15px 16px;
+                    background-color: #4a4a4a;
+                    color: white;
+                    text-decoration: none;
+                    font-family: Arial, sans-serif;
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                #menu > li > a:hover {
+                    background-color: #000;
+                }
+/* --- Main: --- */
+
+#main {
+    clear: left;
+    margin: 18px 10px 40px 215px;
+}
+
+    #search {
+        color: #999;
+        font-size: 13px;
+        font-style: italic;
+    }
+
+        #q {
+            width: 450px;
+            margin-right: 5px;
+            padding: 7px 9px;
+            background-color: #fffedf;
+            border-width: 1px;
+            font-style: normal;
+        }
+
+
+    #results-info {
+        border: 1px solid #dfdfdf;
+        padding: 8px 10px;
+        margin: 20px 0px 13px 0px;
+    }
+
+        #result-count {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #rss-search {
+            margin-left: 1em;
+            font-size: 13px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #rss-search:hover {
+            text-decoration: underline;
+        }
+    
+    div.day {
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        background-color: #efefef;
+        padding: 2px;
+    }
+
+    div.day > div {
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+    }
+
+        table.day {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            table.day > thead {
+                background-color: #fafafa;
+            }
+
+                table.day > thead th {
+                    border-bottom: 1px solid #e4e4e4;
+                    border-top: 1px solid white;
+                    border-left: 1px solid white;
+                    padding: 10px;
+                    text-align: left;
+                    font-weight: normal;
+                    font-size: 22px;
+                    color: #666;
+                }
+
+                table.day > tbody td {
+                    border-top: 1px dotted #ccc;
+                    padding: 4px;
+                    background-color: white;
+                }
+
+                table.day > tbody td.type {
+                    text-align: right;
+                    vertical-align: top;
+                    width: 65px;
+                    border-left: 1px solid white;
+                }
+
+                table.day > tbody td.title {
+                    vertical-align: top;
+                }
+
+                    table.day > tbody td.title > a {
+                        text-decoration: none;
+                    }
+
+                    table.day > tbody td.title > a:hover {
+                        text-decoration: underline;
+                    }
+
+                    table.day > tbody td.title a.org {
+                        color: #666;
+                        font-size: 11px;
+                    }
+
+                    table.day > tbody td.title > a.title {
+                        font-size: 13px;
+                        font-family: Verdana, sans-serif;
+                    }
+
+                table.day > tbody td.expand {
+                    font-size: 9px;
+                    color: #666;
+                    text-align: right;
+                }
+
+                    td.expand a {
+                        color: #666;
+                    }
+
+                    td.expand a:hover {
+                        text-decoration: none;
+                    }
+                
+
+/* --- Left: --- */
+#left {
+    position: absolute;
+    top: 48px;
+    left: 8px;
+    width: 186px;
+    padding-bottom: 2em;
+}
+
+    #left > div {
+        background-color: white;
+    }
+
+        #left > div > h3 {
+            padding: 6px 9px;
+            margin: 18px 0 10px 0;
+            background: #f5f5f5 url('left-div-head.png') no-repeat scroll 50% 50%;
+            color: #4a4a4a;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px white;
+        }
+
+        #left > div > hr {
+            border: 1px dotted #cecece;
+        }
+
+        #left > div > div {
+            margin: 5px;
+            font-size: 12px;
+        }
+
+    #left > #calendar {
+        background-color: #f5f5f5;
+    }
+
+        #left > #calendar > h3 {
+            margin: 15px 0px 5px 0px;
+        }
+
+        #calendar > table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #666;
+        }
+
+            #calendar > table th,
+            #calendar > table td {
+                height: 25px;
+                background-color: white;
+                vertical-align: middle;
+                text-align: center;
+                border: 1px dotted #d3d3d3;
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            #calendar > table tr.wd > th {
+                font-size: 11px;
+                font-weight: normal;
+            }
+
+            #calendar > table td {
+                font-weight: bold;
+            }
+
+            #calendar > table a {
+                text-decoration: none;
+            }
+
+            #calendar > table a:hover {
+                text-decoration: underline;
+                color: red;
+            }
+

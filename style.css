@@ -51,7 +51,7 @@ a > img {
                 #menu > li > a {
                     display: inline;
                     float: left;
-                    padding: 15px 16px;
+                    padding: 16px 20px 14px 22px;
                     background-color: #4a4a4a;
                     color: white;
                     text-decoration: none;
@@ -62,6 +62,10 @@ a > img {
                 }
 
                 #menu > li > a:hover {
+                    background-color: #000;
+                }
+
+                #menu > li > a.active {
                     background-color: #000;
                 }
 /* --- Main: --- */
@@ -101,8 +105,9 @@ a > img {
 
     #results-info {
         border: 1px solid #dfdfdf;
-        padding: 8px 10px;
+        padding: 8px 10px 3px 10px;
         margin: 20px 0px 13px 0px;
+        vertical-align: middle;
     }
 
         #result-count {
@@ -117,6 +122,10 @@ a > img {
             font-weight: bold;
             text-decoration: none;
         }
+
+            #rss-search > span {
+                padding-bottom: 2px;
+            }
 
         #rss-search:hover {
             text-decoration: underline;
